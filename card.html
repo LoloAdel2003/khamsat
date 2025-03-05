@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/ex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body >
+    <h3 class="menue-heading">سلة المشتريات</h3>
+    <img src="imgs/loading-b9f326901e161822ce76a37af0f8d0dfb8d2e913ff9782c13eb5d72bbda199c2.gif" alt="" class="card-img">
+<div class="center text-center card-page">
+    <p>لا توجد منتجات في سلة المشتريات الخاصة بك</p>
+    <button>تصفح الخدمات</button>
+</div>
+    
+    <nav class=" shad bg-white d-flex col-12">
+
+        <a href="index.html" class="d-flex justify-center align-center ">
+            <i class="fas fa-home"></i> <span>الرئيسية</span>
+        </a>
+        
+            <a href="profile.html" class="d-flex justify-center align-center">
+                <i class="fas fa-user"></i> <span>حسابي</span>
+        
+            </a>
+           <a href="search.html" class="d-flex justify-center align-center">
+            <i class="fas fa-search"></i> <span>بحث</span>
+        
+           </a>
+        <a href="card.html" class="d-flex justify-center align-center active">
+            <i class="fas fa-shopping-cart"></i> 
+            <span>السلة </span>
+        
+        </a>
+          
+        
+           <a href="menue.html" class="d-flex justify-center align-center ">
+            <i class="fas fa-bars "></i>
+            <span>القائمة</span>
+           </a>
+            
+        
+           </nav>
+    
+   
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- <script src="js/ex.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            $(".menue-heading + img").fadeOut(2000,function(){
+                $(".card-page").show()
+            })
+            
+        })
+        
+            </script>
+</body>
+</html>
