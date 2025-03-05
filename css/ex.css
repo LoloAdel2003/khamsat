@@ -74,6 +74,9 @@
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
 }
+body {
+  overflow-x: none !important;
+}
 /* start header  */
 header {
   background-color: var(--bg-color);
@@ -357,6 +360,9 @@ nav a i {
 .sidebar::-webkit-scrollbar{
   display:none;
 }
+/* .page {
+max-width: 100%;
+} */
 .sidebar input {
   width: 100%;
   display: block;
@@ -372,9 +378,7 @@ nav a i {
   color: var(--bg-color);
 
 }
-.sidebar:hover {
-  
-}
+
 
 .sidebar .list a {
   display: block;
@@ -424,6 +428,21 @@ transform: translateY(-50%);
 @media (max-width:600px){
   .gridItem {
     grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+
+  }
+
+}
+@media (max-width:400px){
+  .gridItem {
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+
+  }
+  .btn{
+    width:40px !important;
+    height: 40px !important;
+  }
+  .serv {
+    height: 60px !important;
 
   }
 
@@ -503,7 +522,7 @@ width: 100%;
 
   }
   .block-three img{
-    max-width: 500px;
+    max-width: 300px;
 
   }
   .block-three .service{
@@ -587,6 +606,10 @@ padding-bottom: 20px;
   .block-five .inner-section p{
     font-size:14px
   }
+  .block-four .grid-responsive {
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  
+  }
 }
 /* #52b035 */
 /* end block five  */
@@ -595,15 +618,11 @@ padding-bottom: 20px;
   background-color: var(--bg-color);
   /* color: white; */
   text-align: center;
+  padding-top:45px !important;
+  padding-bottom:45px !important;
  
 }
-@media (max-width:767px){
-  .block-six {
-    padding-top:45px !important;
-    padding-bottom:45px !important;
 
-  }
-}
 .block-six h2 {
   color: white;
 
@@ -620,6 +639,11 @@ padding-bottom: 20px;
 .block-six button:hover {
   background-color:green;
   
+}
+@media (max-width:767px){
+  .block-six button {
+    margin-bottom: 40px !important;
+  }
 }
 /* end block */
 /* start block  seven */
@@ -673,7 +697,7 @@ padding: 5px 10px;
   background-color: var(--bs-blue) !important;
 }
 @media (max-width:767px){
-  .block-seven ,.useq ,footer{
+  .block-seven ,.use ,footer{
     display:none;
   }
 }
@@ -851,6 +875,26 @@ background-color: var(--bs-green) ;
   border-color:var(--bs-green)
  }
  /* end search page  */
+ /* login page  */
+ .login-page {
+  color:black;
+  background-color: white;
+  display: flex !important;
+ }
+ .login-page a {
+  border-color: black !important;
+ }
+ .pageLogin{
+  height: 800px;
+  background-color: #dddfe2;
+  padding-top: 60px;
+ }
+.login-page i:hover ,.login-page .login-icon:hover,.login-page .add-user:hover  {
+  background-color: #dddfe2;
+}
+/* .login-page */
+
+ /* end login page  */
 
 
 
