@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header class=" d-flex justify-spaceBetween c-white align-center head login-page">
+   <header class=" d-flex justify-spaceBetween c-white align-center head login-page shad">
     <input type="text" class="p-absolute  bg-white searchInput1" placeholder="ابحث عن ..." id="searchInput1"> <!--searchInput-->
 
     <div class="right d-flex align-center">
@@ -29,14 +29,14 @@
     </div>
     <div class="left d-flex align-center">
        
-        <a href="login.html" class="d-flex align-center">
+        <a href="login.html" class="d-flex align-center login">
             <div class="login-icon c-black">
                 <i class="fas fa-sign-in-alt"></i>
                 <span class="">دخول</span> 
               </div>
         </a>      
            
-        <a href="register.html" class="d-flex align-center">
+        <a href="register.html" class="d-flex align-center register">
             <div class="add-user c-black">
                 <i class="fas fa-user-plus "></i> 
                 <span class="">حساب جديد</span>
@@ -109,8 +109,36 @@
 
 </div>
 
-<div class="pageLogin page" id="page">
-    ddeewewfvwsc
+<div class="pageLogin page d-flex justify-center" id="page">
+    <div class="center bg-white">
+<h1>تسجيل الدخول</h1>
+<div class="d-flex align-center">
+    <img src="imgs/logo-mobile-215fffeb86f5121a190d2551c62feea201ca1b4e0d5ea7feef9f5aa04a55dac4.png" alt="">
+    <div class="name">
+        <span >خمسات</span>
+        <span>Khamsat.com</span>
+    </div>
+</div>
+
+<div class="by d-flex ">
+    <div class="col-5">
+        <span>باستخدام جوجل</span>
+    </div>
+    <div class="col-5">
+        <span>باستخدام مايكروسوفت</span>
+    </div>
+</div>
+
+<span class="text-center d-block or">أو</span>
+<form action="">
+    <span>البريد الالكتروني</span>
+    <input type="text" placeholder="أدخل البريد الالكتروني الخاص بك" id="email" >
+    <span> كلمة المرور </span>
+    <input type="text" placeholder="أدخل  كلمة المرور الخاص بك" id="email" >
+<input type="button" value="دخول" >
+</form>
+    </div>
+   
 </div>
    
     <script src="js/jquery-3.7.1.min.js"></script>

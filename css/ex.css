@@ -1,8 +1,7 @@
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
-/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');/* Global Styles */
 * {
-  font-family: var(--bs-font-sans-serif); /* Clean and modern font choice */
+  /* font-family: var(--bs-font-sans-serif); Clean and modern font choice */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -74,8 +73,46 @@
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
 }
+/* body::-webkit-scrollbar {
+  background-color:var(--bs-green);
+  color:white;
+} */
+
+.scrollTopp {
+  display:none;
+  position:fixed;
+  /* width:35px */
+  ;
+  padding:15px;
+  /* justify-content: baselinealign-item; */
+  /* height:35px; */
+  cursor:pointer;
+  border-radius:50%;
+  right:10px;
+  bottom:40px;
+  background-color:var(--bs-green);
+  color:white;
+  z-index:8;
+  font-weight: bold;
+
+
+}
+@media (max-width:767px){
+  .scrollTopp {
+    bottom:100px
+  }
+}
+.scrollTopp:hover {
+  background-color:green;
+}
+::-webkit-scrollbar-thumb{
+  background-color:green;
+
+}
 body {
   overflow-x: none !important;
+  font-family: "Noto Kufi Arabic", sans-serif;
+
 }
 /* start header  */
 header {
@@ -427,14 +464,14 @@ transform: translateY(-50%);
 }
 @media (max-width:600px){
   .gridItem {
-    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
 
   }
 
 }
-@media (max-width:400px){
+@media (max-width:480px){
   .gridItem {
-    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
 
   }
   .btn{
@@ -815,9 +852,15 @@ left: 10%;
 }
  /* end menue page  */
  /* start card page  */
+ .pageCard {
+  padding-top:60px
+ }
  .card-page{
   width: 100%;
   display: none;
+  background-color:#f1f1f1;
+  padding: 20px 0;
+  
  }
  .menue-heading + img{
   display:block;
@@ -828,7 +871,7 @@ left: 10%;
  .card-page p{
 width: 100% !important;
 font-size: 18px;
-margin-top:5px;
+margin-top:20px;
 
  }
  .card-page button {
@@ -885,15 +928,138 @@ background-color: var(--bs-green) ;
   border-color: black !important;
  }
  .pageLogin{
-  height: 800px;
+  padding:30px;
+  /* height: 800px; */
   background-color: #dddfe2;
-  padding-top: 60px;
+  padding-top: 90px;
  }
 .login-page i:hover ,.login-page .login-icon:hover,.login-page .add-user:hover  {
   background-color: #dddfe2;
 }
 /* .login-page */
 
+.pageLogin .center {
+  /* margin-top:80px; */
+  padding:70px;
+  color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    width:768px !important;
+}
+.pageLogin h1 {
+  font-size:24px;
+  line-height: 1.6em;
+  color:#333;
+font-weight: 400;
+margin-bottom:10px
+}
+.pageLogin img {
+  width:25px;
+  margin-left:10px;
+  height:40px;
+}
+.pageLogin .name span {
+  font-size:14px;
+  color:#333;
+display: block;
+
+}
+.pageLogin .by {
+  margin-top:30px
+;
+margin-bottom:30px;
+justify-content: space-around;
+}
+.pageLogin .by div:first-child {
+
+  background-color: var(--bs-danger)
+  ;
+  text-align: center;
+  color:white;
+  padding:10px;
+  cursor:pointer
+
+}
+.pageLogin .by div:first-child:hover {
+  background-color: #be2e20
+
+}
+.pageLogin .by div:last-child {
+
+  background-color: var(--bs-blue)
+  ;
+  text-align: center;
+  color:white;
+  padding:10px;
+  cursor:pointer;
+}
+.pageLogin .by div:last-child:hover {
+
+  background-color: blue
+  ;}
+  .pageLogin form span {
+margin-top:15px
+  }
+  .pageLogin  input {
+    display:block;
+    width: 100%;
+    color:#222;
+    padding:9px 10px;
+    border:1px solid #aaafb9;
+
+    height:40px;
+    font-size:14px;
+    line-height: 1.42857;
+margin:10px 0;
+  }
+  .pageLogin  input:focus {
+    outline:none
+  }
+  .pageLogin  input[type="button"]{
+    background-color:var(--bs-blue
+    );
+    color:white;
+    margin-top:20px;
+    font-size:16px;
+  }
+  .pageLogin  input[type="button"]:hover{
+
+background-color:blue;
+cursor:pointer
+  }
+  .pageLogin  input[type="checkbox"] {
+    display:inline !important;
+    height: 15px;
+  }
+
+@media (max-width:767px){
+  .login , .register{
+    display:none;
+  }
+.sidebar {
+  /* width:100%;
+  right:-100% !important; */
+}
+.pageLogin{
+padding: 0;  
+padding-bottom: 60px;
+}
+.pageLogin .or {
+  margin-bottom: 15px;
+}
+.pageLogin .center {
+  padding:20px;
+  padding-top:90px
+}
+.pageLogin .by {
+  flex-wrap: wrap;
+}
+.pageLogin .by div{
+width:100%;
+margin-bottom: 10px;
+}
+}
  /* end login page  */
 
 

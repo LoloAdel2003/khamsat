@@ -1,4 +1,32 @@
 $(document).ready(function(){
+
+    //scrollTop
+    let scrollIcon=$(".scrollTopp");
+    // scrollIcon.show()
+    $(window).scroll(function(){
+        console.log($(window).scrollTop())
+        if($(window).scrollTop()>=1000){
+            scrollIcon.fadeIn(500);
+            scrollIcon.click(
+                function(){
+                    $(window).scrollTop(0)
+                    console.log(8)
+                }
+            )
+        }
+        else{
+            scrollIcon.fadeOut(500)
+        }
+    })
+
+
+    // $("body").on("click",$(".scrollTopp"),function(){
+    //     $(window).scrollTop(0)
+    //     console.log(8)
+    // })
+   
+    
+   
     // sidebar
     $("#menueitem").click(function(){
      if( $(".sidebar").css("right") !="0px"){
@@ -74,7 +102,7 @@ $(document).ready(function(){
      searchIcon.classList.remove("searchBorder")
      searchIcon.classList.remove("bg-gray")
 
-     searchIcon.classList.add("bg-dark ")
+     searchIcon.classList.add("bg-dark")
 //  searchIcon.styl/e.backgroundColor
  }
  }
